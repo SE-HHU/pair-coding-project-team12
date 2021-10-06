@@ -27,12 +27,12 @@ int ReadFile(string ExercisePath,string AnswerPath)
 	fp2.open(AnswerPath, ios::in);
 	if (!fp1) 
 	{
-		cout << "��Ŀ�ļ���ʧ�ܣ������ļ�·���Ƿ���ȷ" << endl;
+		cout << "题目文件打开失败，请检查文件路径是否正确" << endl;
 		return -1;
 	}
 	if (!fp2)
 	{
-		cout << "���ļ���ʧ�ܣ������ļ�·���Ƿ���ȷ" << endl;
+		cout << "答案文件打开失败，请检查文件路径是否正确" << endl;
 		return -1;
 	}
 	
